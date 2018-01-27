@@ -20,8 +20,6 @@ import java.io.File;
 public class MainActivity extends AppCompatActivity {
 
     private ImageView mImageView;
-//    private Button mBtnResource;
-//    private Button mBtnFile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,35 +34,5 @@ public class MainActivity extends AppCompatActivity {
 
     private void initView() {
         mImageView = (ImageView) findViewById(R.id.imageView);
-//        mBtnResource = (Button) findViewById(R.id.btnResource);
-//        mBtnResource.setOnClickListener(this);
-//        mBtnFile = (Button) findViewById(R.id.btnFile);
-//        mBtnFile.setOnClickListener(this);
     }
-
-//    @Override
-//    public void onClick(View v) {
-//        switch (v.getId()) {
-//            case R.id.btnResource:
-//                // TODO 18/01/18
-//
-//                break;
-//            case R.id.btnFile:
-//                // TODO 18/01/18
-//
-//                String s = Environment.getExternalStorageDirectory().toString()+"/Tencent/QQ_Images/a.jpg";
-//                File file = new File(s);
-//                if (file.exists()){
-//                    Bitmap bitmapFile = DoubleSamplingUtils.decodeFileImage(s, 100, 100);
-//                    int width = bitmapFile.getWidth();
-//                    System.out.println("width = " + width);
-//                    int height = bitmapFile.getHeight();
-//                    System.out.println("height = " + height);
-//                    mImageView.setImageBitmap(bitmapFile);
-//                }
-//                break;
-//            default:
-//                break;
-//        }
-//    }
 }

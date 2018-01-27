@@ -58,16 +58,4 @@ public class DoubleSamplingUtils {
         //返回 bitmap
         return BitmapFactory.decodeResource(res,resId,options);
     }
-
-    public static Bitmap decodeFileImage(String filePath, int imageWidth, int imageHeight){
-
-
-        BitmapFactory.Options options = new BitmapFactory.Options();
-        options.inJustDecodeBounds = true;
-        BitmapFactory.decodeFile(filePath,options);
-        options.inSampleSize = calculateSampleSize(options,imageWidth,imageHeight);
-//        options.inPreferredConfig = Bitmap.Config.RGB_565;
-        options.inJustDecodeBounds = false;
-        return BitmapFactory.decodeFile(filePath,options);
-    }
 }
